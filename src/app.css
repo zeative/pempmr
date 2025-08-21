@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #f8fafc;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+  }
+
+  #app {
+    min-height: 100vh;
+    padding: 0.5rem;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 hover:bg-blue-700 active:bg-blue-800;
+  }
+
+  .btn-secondary {
+    @apply bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 hover:bg-red-700 active:bg-red-800;
+  }
+
+  .card {
+    @apply bg-white rounded-lg  border border-gray-200;
+  }
+
+  .card-hover {
+    @apply transition-shadow duration-200 hover:shadow-lg;
+  }
+
+  .gradient-text {
+    @apply text-blue-600 font-bold;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8;
+  }
+}
