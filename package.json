@@ -19,6 +19,7 @@
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.6.2",
     "@supabase/supabase-js": "^2.38.0",
+    "dotenv": "^17.2.1",
     "svelte-routing": "^2.0.0"
   }
 }
